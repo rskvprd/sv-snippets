@@ -168,5 +168,12 @@
 			"else   ${3:error_process}"
 		],
 		"description": "insert assert() ... else ..."
-	}
+	},
+  "$clog2(\"\")": {
+    "prefix": "clog2",
+    "body": [
+      "\\$clog2(${1:var})$2"
+    ],
+    "description": "Ceil logarithm of power 2"
+  }
 }

@@ -1,5 +1,12 @@
 {
   // REPORT MACROS
+  "uvm necessary imports": {
+    "prefix": "import_uvm",
+    "body": [
+      "import uvm_pkg::*;\n`include \"uvm_macros.svh\"$0"
+    ],
+    "description": "Import UVM package and include UVM macros"
+  },
   "uvm_macro_info": {
     "prefix": "uvm_info",
     "body": ["`uvm_info(${1|get_name(),get_full_name(),\"\"|}, \"${2:message}\", ${3|UVM_NONE,UVM_LOW,UVM_MEDIUM,UVM_HIGH,UVM_FULL,UVM_DEBUG|})\n$0"],
