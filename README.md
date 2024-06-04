@@ -26,7 +26,7 @@ Phases of UVM simulation such as build_phase(), run_phase() etc.
 
 To add these snippets:
 
-1. Run `combine.bat` on Windows or `combine.sh` on Linux.
+1. Run `combine.py`.
 2. Press `Ctrl+Shift+P` and select `Snippets: Configure User Snippets`
 3. Select `systemverilog.json`
 4. Copy content of `systemverilog.json` from this repository and paste it to just opened file

@@ -86,7 +86,6 @@
     ],
     "description": "always_ff with reset"
   },
-  //  Common System Calls
   "bits": {
     "prefix": "$bits",
     "body": [
@@ -122,53 +121,49 @@
     ],
     "description": "The $urandom_range() function returns an unsigned integer within a specified range."
   },
-
-  /////////////////////////////////////
-  // Printing and simulation control //
-  /////////////////////////////////////
   "display": {
-		"prefix": "display",
-		"body": [
-			"\\$display(\"$1\"$2);$0"
-		],
-		"description": "$display(\"...\", params...)"
-	},
+    "prefix": "display",
+    "body": [
+      "\\$display(\"$1\"$2);$0"
+    ],
+    "description": "$display(\"...\", params...)"
+  },
   "error": {
-		"prefix": "error",
-		"body": [
-			"\\$error(\"$1\"$2);$0"
-		],
-		"description": "$error(\"...\", params...)"
-	},
+    "prefix": "error",
+    "body": [
+      "\\$error(\"$1\"$2);$0"
+    ],
+    "description": "$error(\"...\", params...)"
+  },
   "fatal": {
-		"prefix": "fatal",
-		"body": [
-			"\\$fatal(\"$1\"$2);$0"
-		],
-		"description": "$fatal(\"...\", params...)"
-	},
+    "prefix": "fatal",
+    "body": [
+      "\\$fatal(\"$1\"$2);$0"
+    ],
+    "description": "$fatal(\"...\", params...)"
+  },
   "stop": {
-		"prefix": "stop",
-		"body": [
-			"\\$stop(2);$0"
-		],
-		"description": "$stop(2)"
-	},
+    "prefix": "stop",
+    "body": [
+      "\\$stop(2);$0"
+    ],
+    "description": "$stop(2)"
+  },
   "finish": {
-		"prefix": "finish",
-		"body": [
-			"\\$finish(2);$0"
-		],
-		"description": "$finish(2)"
-	},
+    "prefix": "finish",
+    "body": [
+      "\\$finish(2);$0"
+    ],
+    "description": "$finish(2)"
+  },
   "assert": {
-		"prefix": "assert",
-		"body": [
-			"assert (${1:condition}) $2",
-			"else   ${3:error_process}"
-		],
-		"description": "insert assert() ... else ..."
-	},
+    "prefix": "assert",
+    "body": [
+      "assert (${1:condition}) $2",
+      "else   ${3:error_process}"
+    ],
+    "description": "insert assert() ... else ..."
+  },
   "$clog2(\"\")": {
     "prefix": "clog2",
     "body": [
